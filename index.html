@@ -27,10 +27,30 @@
   </header>
   <main>
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-12">
-          <div id="app"></div>
-        </div>
+      <section class="row">
+        <form class="col-5 p-3 bg-light rounded mb-3 shadow" onsubmit="app.playersController.createPlayer()">
+        <h3>Create Player</h3>
+        <input type="text" id="name" name="name" minlength="3" maxlength="20" class="form-control" placeholder="Name">
+        <input type="number" id="points" name="points" min="1" class="form-control" placeholder="Points">
+        <input type="text" id="favoriteColor" name="favoriteColor" minlength="3" maxlength="20" class="form-control" placeholder="Favorite Color">
+        <button class="btn btn-primary">Submit</button>
+      </form>
+      </section>
+    </div>
+
+<!-- <button class="btn" onsubmit="app.playersController.scorePoint('${this.name}')"></button> -->
+
+
+
+
+    <div class="container-fluid">
+      <div id="players" class="row">
+        <!-- Template Below -->
+        <!-- <div class="col-4 card">
+          <div id="players"></div>
+        </div> -->
+
+
       </div>
     </div>
   </main>

@@ -8,7 +8,7 @@ class AppState extends EventEmitter {
   /** @type {import('./Models/Value').Value[]} */
   values = loadState('values', [Value])
 
-  players = [new Player("Zak")]
+  players = []
 
 }
 
